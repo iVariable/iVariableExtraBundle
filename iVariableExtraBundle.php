@@ -4,6 +4,7 @@ namespace iVariable\ExtraBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ExtraBundle extends Bundle
+class iVariableExtraBundle extends Bundle
 {
+
 }
