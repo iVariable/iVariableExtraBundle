@@ -1,6 +1,6 @@
 parameters:
   ivariable.extra.user.class: iVariable\ExtraBundle\Service\User
-  ivariable.extra.repo.class: iVariable\ExtraBundle\Service\Repository
+  ivariable.extra.repo.class: iVariable\ExtraBundle\Service\Repository\Repository
 
 services:
   iv.user:
