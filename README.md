@@ -3,15 +3,19 @@
 Often used components of my symfony2 apps
 
 Contents:
-- iv.user service container getter
-- iv.repo service container getter
-- twig options
+ - iv.user service container getter
+ - iv.repo service container getter
+ - twig options
+
+## Installation ##
+
+Install to bundles/iVariable/ExtraBundle
 
 ## iv.repo ##
 
 Service shortcut to repositories.
 
-### Configration ###
+### Configuration ###
 
 Make aliases to yout repo in your config.yml
 
