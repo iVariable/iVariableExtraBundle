@@ -22,8 +22,10 @@ Make aliases to yout repo in your config.yml
 
 Instead of:
 
-	$this->getDoctrine()->getRepository('AcmeBundle:Blog\Post');
+	$repo = $this->getDoctrine()->getRepository('AcmeBundle:Blog\Post');
+	$post = new Acme\AcmeBundle\Blog\Post('title', 'post',$author);
 
 Use:
 
-	$this->get('iv.repo.blogpost');
+	$repo = $this->get('iv.repo.blogpost');
+	$post = $this->get('iv.repo.blogpost')->newEntity('title', 'post',$author);
