@@ -1,13 +1,6 @@
 <?php
 namespace iVariable\ExtraBundle\Monolog\Handler;
 
-/**
- * Stores to any stream resource
- *
- * Can be used to store into php://stderr, remote and local files, etc.
- *
- * @author Jordi Boggiano <j.boggiano@seld.be>
- */
 class FlushingStreamHandler extends \Monolog\Handler\StreamHandler
 {
 

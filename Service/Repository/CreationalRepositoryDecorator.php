@@ -12,6 +12,7 @@ class CreationalRepositoryDecorator
 		$this->creator = $creator;
 		$this->name = $name;
 		$this->repo = $repo;
+		$this->repo->wrapper = $this;
 	}
 
 	public function __call( $method, $args ){
