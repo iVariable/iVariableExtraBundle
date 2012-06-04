@@ -34,8 +34,9 @@ class iVariableExtraExtension extends Extension
 				new \Symfony\Component\DependencyInjection\Definition(
 					$container->getParameter( 'ivariable.extra.repo.class'),
 					array(
-						'em'	=> new \Symfony\Component\DependencyInjection\Reference('em'),
-						'map'	=> $config['repo'],
+						'em'		=> new \Symfony\Component\DependencyInjection\Reference('em'),
+						'map'		=> $config['repo'],
+						'container' => new \Symfony\Component\DependencyInjection\Reference('service_container'),
 					)
 				)
 			);

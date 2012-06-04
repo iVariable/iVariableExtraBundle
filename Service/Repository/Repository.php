@@ -11,12 +11,18 @@ class Repository
 
 	private $repositoryMap = array();
 	private $em;
+	private $container;
 
-	public function __construct( $em, $repositoryMap ){
+	public function __construct( $em, $repositoryMap, $container ){
 		$this->repositoryMap = $repositoryMap;
 		$this->em = $em;
+		$this->container = $container;
 		$result = $this;
 		return $result;
+	}
+
+	public function getContainer(){
+		return $this->container;
 	}
 
 	/**
@@ -45,7 +51,7 @@ class Repository
 		}
 
 		$class = $this->refMap[$name];
-		
+
 		if( $class->getConstructor() === null ){
 			$result = $class->newInstance();
 		}else{

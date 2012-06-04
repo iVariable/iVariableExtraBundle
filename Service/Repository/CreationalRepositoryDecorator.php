@@ -24,4 +24,8 @@ class CreationalRepositoryDecorator
 		return $this->creator->newEntity( $this->name, $args );
 	}
 
+	public function getContainer(){
+		return $this->creator->getContainer();
+	}
+
 }
