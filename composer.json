@@ -1,0 +1,21 @@
+{
+	"name": "iVariable/iVariableExtraBundle",
+	"type": "symfony-bundle",
+    "license": "MIT",
+	"authors": [
+		{
+		"name": "Vladimir Savenkov",
+		"email": "ivariable@gmail.com",
+		"homepage": "http://ivariable.ru",
+		"role": "Developer"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"symfony/framework-bundle": "2.*.*"
+	},
+	"autoload": {
+        "psr-0": { "iVariable\\Bundle\\iVariableExtraBundle": "" }
+    },
+    "target-dir": "iVariable/Bundle/iVariableExtraBundle"
+}
