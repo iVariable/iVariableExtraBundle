@@ -15,6 +15,7 @@
 		"symfony/framework-bundle": "2.*"
 	},
 	"autoload": {
-        "psr-0": { "iVariable\\iVariableExtraBundle": "" }
-    }
+        "psr-0": { "iVariable\\ExtraBundle": "" }
+    },
+    "target-dir":"iVariable/Bundle/ExtraBundle"
 }
