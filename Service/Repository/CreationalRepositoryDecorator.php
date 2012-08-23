@@ -9,10 +9,13 @@ class CreationalRepositoryDecorator
 	private $creator = null;
 
 	public function __construct( $creator, $name, $repo ){
-		$this->creator = $creator;
-		$this->name = $name;
-		$this->repo = $repo;
-		$this->repo->wrapper = $this;
+		$this->creator			= $creator;
+		$this->name				= $name;
+		$this->repo				= $repo;
+		if( is_a( $this->repo, '\\Symfony\\Component\\DependencyInjection\\ContainerAwareInterface') ){
+			$this->repo->setContainer( $this->getContainer() );
+		}
+		$this->repo->wrapper	= $this;
 	}
 
 	public function __call( $method, $args ){

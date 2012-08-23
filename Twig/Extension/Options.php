@@ -29,6 +29,7 @@ class Options extends \Twig_Extension {
             'endsWith' => new \Twig_Filter_Method($this, 'modEndsWith'),
             'contains' => new \Twig_Filter_Method($this, 'modContains'),
             'pad' => new \Twig_Filter_Function('str_pad'),
+            'md5' => new \Twig_Filter_Function('md5'),
             'jsonEncode' => new \Twig_Filter_Function('json_encode'),
             'jsonDecode' => new \Twig_Filter_Function('json_decode'),
             'round' => new \Twig_Filter_Function('round'),
